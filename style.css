@@ -1,0 +1,277 @@
+/*general*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h2{ font-size: 2.4em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    color: white;
+    background-color: blueviolet;
+}
+
+/*header*/
+.navbar.navbar-expand-lg.bg-secondary{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.994817910074186) 40%, rgba(28,3,50,1) 51%, rgba(45,27,116,1) 62%, rgba(140,88,187,1) 74%, rgba(159,111,204,1) 98%);
+    background-repeat: no-repeat;
+    height: 80px ;
+}       
+      
+i.fa-brands.fa-facebook.fa-2xl:hover{
+    color: rgb(87, 73, 167);
+}
+
+i.fa-brands.fa-instagram.fa-2xl:hover{
+color:firebrick;
+}
+i.fa-brands.fa-linkedin.fa-2xl:hover{
+    color:blue;
+}
+
+i.fa-brands.fa-whatsapp.fa-2xl:hover{
+    color:forestgreen;
+}
+i.fa-brands.fa-github.fa-2xl:hover{
+    color:blueviolet;
+}
+
+.list-group{
+--bs-list-group-bg: transparent;
+--bs-list-group-border-color: none;
+}
+ 
+  .list-group-item{
+   color: rgb(255, 255, 255);
+   width: 15px;
+   padding-right: 30px;
+}
+
+
+ 
+/*presentación*/
+ #about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+}
+#about button{
+    font-size: 0.9em;
+    width: 140px;
+    margin-left:2em;
+}
+
+.container.text-xx1-center{
+    padding-left:5%;
+    padding-top: 700px;
+    
+}
+   
+
+.container.text-xx1-center:hover{
+    transform:scale(1.1);
+  }
+
+.nombre{
+    width: 200px;
+}
+
+    
+/*sobre mi*/
+#ivi {
+    height: 125vh;
+}
+
+.color-acento{ color:blueviolet; 
+}
+
+#ivi .container{
+    text-align: center;
+    padding: 250px 12px;
+    height: 90vh;
+}
+
+#ivi .texto{
+    text-align: center;
+    padding-bottom: 150px;
+    height: 90vh;
+}
+
+/*Proyectos*/
+.proyectos{
+    color: aliceblue;
+    padding-top:50px;
+	padding-bottom: 3rem;
+    background-color:#181414;
+}
+.card-deck{
+	width: 100%;
+	display: flex;
+	max-width: 100%;
+}
+
+.card{
+	width: 100%;
+    height: 450px;
+	margin: 30px;
+	text-align: center;
+    color:aliceblue;
+	border-radius: 8px;
+	background-color:rgb(11, 11, 12);
+	transition: all 600ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 50px 20px rgba(42, 38, 46, 0.979);
+    transform: translateY(3%);
+    }
+
+.card-img-top{
+	width: 100%;
+	height: 80%;
+}
+
+/*Cursos*/
+#caracteristicas {
+    padding-top:50px;
+    height: 130vh;
+}
+
+
+#caracteristicas .container{  
+    text-align: left; 
+    padding: 250px 12px;
+    padding-top: 80px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+    list-style: none;
+    font-size: 20px;
+}
+
+#caracteristicas ul{
+    margin-left: -2px;
+}
+
+#caracteristicas h3{
+    text-align:center;
+    
+}
+
+/*habilidades*/
+#habilidades{
+    display: flex;
+    size: 50px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:#181414 ;
+    color: white;
+    height: 120vh;;
+}
+
+
+/*footer*/
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height:90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+/*Media*/
+@media (min-width: 756px){
+    
+    #ivi .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #ivi .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ivi h2{
+        margin-top: 0px;
+    }
+
+    #ivi .img-container{
+        background-image: url("IMG/close-up-image-of-programer-working-at-his-desk-in-office.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+ 
+    #caracteristicas{
+        background-image: url("IMG/U4FFGR2XRFHPLM5CQCKQL2GI4U.webp");
+        background-repeat: no-repeat;
+        background-size: 700px 600px;
+        background-position: calc(100vw - 600px) 170px;
+    }
+
+  
+    #caracteristicas ul{
+        margin-left: -60px;
+    }
+    
+
+
+    #habilidades h2{
+        font-size: 5em;
+    }
+
+
+    footer .container{
+        justify-content:center;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+
